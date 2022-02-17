@@ -12,7 +12,7 @@ plotly.sign_in('tugberkcapraz', 'yqgaWSu0i73M38RgBPrB')
 
 
 def cleaner():
-    link = "..data/solikris.dta"
+    link = "./data/solikris.dta"
     reader = pd.read_stata(link, iterator=True)
 
     df_num = reader.read(convert_categoricals=False)
